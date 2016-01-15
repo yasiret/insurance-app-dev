@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-right">
+          <% if user_signed_in? %>
+           <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+          <%else%>
+            <li><a href="<%= new_user_registration_path %>">Sign Up</a></li>
+            <li><a href="<%=  new_user_session_path %>">Log In</a></li>
+          <% end -%>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Find a place to stay.</h1>
+      </div>
+    </div> 
+
+  </body>
+</html>
