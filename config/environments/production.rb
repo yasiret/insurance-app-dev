@@ -84,8 +84,8 @@ config.action_mailer.default :charset => "utf-8"
       :address              => "smtp.gmail.com",
       :port                 => 587,
       :domain               => "insurance-app-dev.herokuapp.com",
-      :user_name            => ENV["GMAIL_SMTP_USERNAME"],
-      :password             => ENV["GMAIL_SMTP_PASSWORD"],
+      :user_name            => ENV["GMAIL_USERNAME"],
+      :password             => ENV["GMAIL_PASSWORD"],
       :authentication       => :palin,
       :enable_starttls_auto => true
   }
