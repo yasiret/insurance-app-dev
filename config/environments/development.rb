@@ -41,16 +41,20 @@ Rails.application.configure do
 
   config.action_mailer.delivery_method = :smtp
 
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+# config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+# :user_name            => "saleemfastian007@gmail.com",
+# :password             => "zohaibahmed",
 
+config.action_mailer.default_url_options = { :host => 'insurance-app-dev.herokuapp.com' }  
+config.action_mailer.default :charset => "utf-8"  
 
   config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => "gmail.com",
-      :user_name            => "saleemfastian007@gmail.com",
-      :password             => "zohaibahmed",
-      :authentication       => :login,
+      :domain               => "insurance-app-dev.herokuapp.com",
+      :user_name            => ENV["GMAIL_USERNAME"],
+      :password             => ENV["GMAIL_PASSWORD"],
+      :authentication       => :palin,
       :enable_starttls_auto => true
   }
 

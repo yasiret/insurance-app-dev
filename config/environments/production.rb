@@ -76,4 +76,18 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+config.action_mailer.default_url_options = { :host => 'insurance-app-dev.herokuapp.com' }  
+config.action_mailer.default :charset => "utf-8"  
+
+  config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => "insurance-app-dev.herokuapp.com",
+      :user_name            => ENV["GMAIL_SMTP_USERNAME"],
+      :password             => ENV["GMAIL_SMTP_PASSWORD"],
+      :authentication       => :palin,
+      :enable_starttls_auto => true
+  }
+
 end
