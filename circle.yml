@@ -1,6 +1,8 @@
-ruby:
-  version:
-    '2.1.1p76'
+machine:
+  timezone:
+    America/Los_Angeles
+  ruby:
+    version: 2.1.1p76
 
     ########################
 # Customize dependencies
