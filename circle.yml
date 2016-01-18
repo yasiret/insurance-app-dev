@@ -8,16 +8,15 @@ dependencies:
     # - npm install coffeescript # install from a different package manager
     # - gem uninstall bundler # use a custom version of bunlder
     # - gem install bundler --pre
-    environment:
-    	GMAIL_USERNAME: saleemfastian007@gmail.com
-		GMAIL_PASSWORD: zohaibahmed
     - gem install byebug -v '8.2.1'
+
 # Customize database setup
 database:
   override:
     # replace Circle generated database.yml
     # - cp config/database.yml.ci config/database.yml
     - bundle exec rake db:create db:schema:load --trace
+
 # deployment:
 #   production:
 #     branch: master
