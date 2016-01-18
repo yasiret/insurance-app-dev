@@ -1,12 +1,8 @@
 machine:
-  timezone:
-    America/Los_Angeles
+  timezone: UTC
   ruby:
     version: 2.2.2
-
-    ########################
 # Customize dependencies
-########################
 dependencies:
   pre:
     # - npm install coffeescript # install from a different package manager
@@ -14,11 +10,11 @@ dependencies:
     # - gem install bundler --pre
     - gem install byebug -v '8.2.1'
 
-## Customize database setup
+# Customize database setup
 database:
   override:
-    # replace Circle's generated database.yml
-    - cp config/database.yml.ci config/database.yml
+    # replace Circle generated database.yml
+    # - cp config/database.yml.ci config/database.yml
     - bundle exec rake db:create db:schema:load --trace
 
 # deployment:
@@ -26,3 +22,9 @@ database:
 #     branch: master
 #     heroku:
 #       appname: insurance-app-dev
+
+#test:
+#   minitest_globs:
+#     - test/**/*_test.rb
+  # post:
+  #   - bundle exec rake custom:test:suite
