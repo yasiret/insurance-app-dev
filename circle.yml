@@ -17,11 +17,11 @@ database:
     # - cp config/database.yml.ci config/database.yml
     - bundle exec rake db:create db:schema:load --trace
 
-# deployment:
-#   production:
-#     branch: master
-#     heroku:
-#       appname: insurance-app-dev
+deployment:
+  production:
+    branch: circleci
+    heroku:
+      appname: insurance-app-dev
 
 #test:
 #   minitest_globs:
