@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   # devise_for :users
 
- devise_for :users, controllers: { sessions: "user/sessions", registrations: 'user/registrations'}
+devise_for :users, controllers: { 
+  sessions: "user/sessions", 
+  registrations: 'user/registrations', 
+  confirmations: 'user/confirmations'
+}
 
 
   # devise_for :users,
