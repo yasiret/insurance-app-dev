@@ -2,11 +2,9 @@ machine:
   timezone: UTC
   ruby:
     version: 2.2.2
-
 environment:
 	GMAIL_USERNAME:"saleemfastian007@gmail.com" 
 	GMAIL_PASSWORD:"zohaibahmed"
-
 # Customize dependencies
 dependencies:
   pre:
@@ -14,14 +12,12 @@ dependencies:
     # - gem uninstall bundler # use a custom version of bunlder
     # - gem install bundler --pre
     - gem install byebug -v '8.2.1'
-
 # Customize database setup
 database:
   override:
     # replace Circle generated database.yml
     # - cp config/database.yml.ci config/database.yml
     - bundle exec rake db:create db:schema:load --trace
-
 # deployment:
 #   production:
 #     branch: master
