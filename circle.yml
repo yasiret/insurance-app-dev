@@ -4,8 +4,8 @@ machine:
     version: 2.2.2
 
 environment:
-GMAIL_USERNAME: "saleemfastian007@gmail.com"
-GMAIL_PASSWORD: "zohaibahmed"
+	GMAIL_USERNAME:"saleemfastian007@gmail.com"
+	GMAIL_PASSWORD:"zohaibahmed"
 
 # Customize dependencies
 dependencies:
