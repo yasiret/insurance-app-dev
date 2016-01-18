@@ -1,3 +1,13 @@
 ruby:
   version:
     '2.1.1p76'
+
+    ########################
+# Customize dependencies
+########################
+dependencies:
+  pre:
+    # - npm install coffeescript # install from a different package manager
+    # - gem uninstall bundler # use a custom version of bunlder
+    # - gem install bundler --pre
+    gem install byebug -v '8.2.1'
