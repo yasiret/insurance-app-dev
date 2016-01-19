@@ -28,8 +28,9 @@ development:
 test: &test
   adapter: postgresql
   encoding: unicode
-  database: insurance_db
+  database: insurance_test
   pool: 5
+  host: localhost
   username: postgres
   password: root
 
@@ -43,7 +44,7 @@ production:
   # database: db/production.sqlite3
   adapter: postgresql
   encoding: unicode
-  database: insurance_db
+  database: insurance_production
   pool: 5
   username: postgres
   password: root
