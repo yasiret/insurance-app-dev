@@ -25,15 +25,21 @@ deployment:
       appname: insurance-app-dev
 
 test:
-#   minitest_globs:
-#     - test/**/*_test.rb
-  # post:
-  #   - bundle exec rake custom:test:suite
   post:
- 		# - bundle exec rake jasmine:ci: # add an extra test type
-      environment:
-        RAILS_ENV: test
-        RACK_ENV: test
+    environment:
+      RAILS_ENV: test
+      RACK_ENV: test
+
+# test:
+# #   minitest_globs:
+# #     - test/**/*_test.rb
+#   # post:
+#   #   - bundle exec rake custom:test:suite
+#   post:
+#  		# - bundle exec rake jasmine:ci: # add an extra test type
+#     environment:
+#       RAILS_ENV: test
+#       RACK_ENV: test
 
 
 
