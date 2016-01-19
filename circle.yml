@@ -25,10 +25,12 @@ deployment:
       appname: insurance-app-dev
 
 test:
+  override:
+    - rspec spec
   # post:
-  environment:
-    RAILS_ENV: test
-    RACK_ENV: test
+    # environment:
+    #   RAILS_ENV: test
+    #   RACK_ENV: test
 
 # test:
 # #   minitest_globs:
