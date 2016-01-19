@@ -24,16 +24,16 @@ deployment:
     heroku:
       appname: insurance-app-dev
 
-#test:
+test:
 #   minitest_globs:
 #     - test/**/*_test.rb
   # post:
   #   - bundle exec rake custom:test:suite
-  	post:
-   		- bundle exec rake jasmine:ci: # add an extra test type
-	        environment:
-	          RAILS_ENV: test
-	          RACK_ENV: test
+  post:
+ 		# - bundle exec rake jasmine:ci: # add an extra test type
+      environment:
+        RAILS_ENV: test
+        RACK_ENV: test
 
 
 
