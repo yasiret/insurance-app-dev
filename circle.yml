@@ -25,10 +25,10 @@ deployment:
       appname: insurance-app-dev
 
 test:
-  post:
-    environment:
-      RAILS_ENV: test
-      RACK_ENV: test
+  # post:
+  environment:
+    RAILS_ENV: test
+    RACK_ENV: test
 
 # test:
 # #   minitest_globs:
