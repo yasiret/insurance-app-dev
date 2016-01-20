@@ -10,7 +10,6 @@ dependencies:
     # - gem uninstall bundler # use a custom version of bunlder
     # - gem install bundler --pre
     - gem install byebug -v '8.2.1'
-    - bundle exec rake assets:precompile
 
 # Customize database setup
 database:
