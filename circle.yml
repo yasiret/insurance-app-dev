@@ -20,7 +20,7 @@ database:
 
 deployment:
   production:
-    branch: form_engine
+    branch: master
     heroku:
       appname: insurance-app-dev
 
