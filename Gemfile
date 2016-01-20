@@ -39,6 +39,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # end
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+gem 'bootstrap-validator-rails'
 # gem 'less-rails'
 
 # Use Capistrano for deployment

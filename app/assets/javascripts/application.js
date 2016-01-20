@@ -16,3 +16,19 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function($) {
+    'use strict';
+    var template = document.getElementById('form-builder-template'),
+      formContainer = document.getElementById('rendered-form'),
+      renderBtn = document.getElementById('render-form-button');
+    $(template).formBuilder();
+
+    $(renderBtn).click(function(e) {
+      e.preventDefault();
+      $(template).formRender({
+        container: $(formContainer)
+      });
+    });
+});
+
