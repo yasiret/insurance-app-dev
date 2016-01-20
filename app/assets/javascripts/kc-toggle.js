@@ -16,12 +16,12 @@
 
     $kcToggle.toggleClass('on', element.is(':checked'));
 
-    var kctOn = `<div class="kct-on">${opts.labels.on}</div>`,
-        kctOff = `<div class="kct-off">${opts.labels.off}</div>`,
-        kctHandle = `<div class="kct-handle"></div>`,
-        kctInner = `<div class="kct-inner">${kctOn}${kctHandle}${kctOff}</div>`;
+    // var kctOn = `<div class="kct-on">${opts.labels.on}</div>`,
+    //     kctOff = `<div class="kct-off">${opts.labels.off}</div>`,
+    //     kctHandle = `<div class="kct-handle"></div>`,
+    //     kctInner = `<div class="kct-inner">${kctOn}${kctHandle}${kctOff}</div>`;
 
-    $kcToggle.append(kctInner);
+    // $kcToggle.append(kctInner);
 
     $kcToggle.click(function() {
       element.attr('checked', !element.attr('checked'));
