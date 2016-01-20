@@ -64,3 +64,10 @@
 .learn-more a {
   color: #00b0ff;
 }
+
+
+
+.checkbox input[type=checkbox]{
+  margin-top: -9px !important;
+  margin-left: 1px !important;
+}
