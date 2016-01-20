@@ -19,9 +19,9 @@
 
 $(document).ready(function($) {
     'use strict';
-    var template = document.getElementById('form-builder-template'),
-      formContainer = document.getElementById('rendered-form'),
-      renderBtn = document.getElementById('render-form-button');
+    var template = document.getElementById('form-builder-template');
+    var formContainer = document.getElementById('rendered-form');
+    var renderBtn = document.getElementById('render-form-button');
     $(template).formBuilder();
 
     $(renderBtn).click(function(e) {
