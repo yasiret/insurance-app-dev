@@ -1,30 +1,31 @@
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
 
-      
-      <div class="container">
-        <ul class="pull-ri1ght">
-          <% if user_signed_in? %>
-           <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
-          <%else%>
-            <li><a href="<%= new_user_registration_path %>">Sign Up</a></li>
-            <li><a href="<%=  new_user_session_path %>">Log In</a></li>
-          <% end -%>
-        </ul>
-      </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
 
-      <h2>Your  details.</h2>
-
-        <div class="field">
-          Email: <%= current_user.email if user_signed_in? %>
+        
+        <div class="container">
+          <ul class="pull-ri1ght">
+            <% if user_signed_in? %>
+             <li><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></li>
+            <%else%>
+              <li><a href="<%= new_user_registration_path %>">Sign Up</a></li>
+              <li><a href="<%=  new_user_session_path %>">Log In</a></li>
+            <% end -%>
+          </ul>
         </div>
 
-    </div>
+        <h2>Your  details.</h2>
 
+          <div class="field">
+            Email: <%= current_user.email if user_signed_in? %>
+          </div>
+
+      </div>
+
+    </div>
   </div>
-</div>
 
 
  <div class="demo-wrap">
@@ -38,8 +39,6 @@
           </form>
           <br style="clear:both">
         </div>
-        
-
 
          <div class="render-form">
           <h2><strong>Render The Form</strong></h2>
